@@ -3,7 +3,7 @@
 const get = require('simple-get')
 
 function createClient (opts) {
-  if (!opts.token) return new TypeError('Need to provide your shorte.st token.')
+  if (!opts.token) throw new TypeError('Need to provide your shorte.st token.')
 
   const params = {
     method: 'PUT',
@@ -18,8 +18,7 @@ function createClient (opts) {
     params.form.urlToShorten = url
     get.concat(params, function (err, res, data) {
       if (err) return cb(err, data)
-      if (!data || data.status !== 'ok' || !data.shortenedUrl)
-        return cb(new Error('Invalid Shorte.st response'), data)
+      if (!data || data.status !== 'ok' || !data.shortenedUrl) return cb(new Error('Invalid Shorte.st response'), data)
       return cb(null, data.shortenedUrl)
     })
   }
