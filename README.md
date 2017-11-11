@@ -1,7 +1,5 @@
 # shortest-api
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/shortest-api.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/shortest-api.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/shortest-api/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/shortest-api)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/shortest-api.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/shortest-api)
