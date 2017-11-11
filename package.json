@@ -23,7 +23,7 @@
     "api"
   ],
   "dependencies": {
-    "simple-get": "~2.3.0"
+    "simple-get": "~2.7.0"
   },
   "devDependencies": {
     "coveralls": "latest",
